@@ -1,0 +1,93 @@
+h1 {
+    font-size: 100px;
+    height: 0.5em;
+    
+}
+body {
+    font-family: copperplate;
+    background: #f59416;
+    color: black;
+    text-align: left;
+    margin: 10px;
+    padding: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+button {
+    background-color: orange;
+    color: black;
+    border-style:double;
+    border-color: #f59416;
+    width: 120px;
+    height: 30px;
+    padding: 0 ;
+    cursor: cell;
+    border-radius: 8px;
+}
+
+.menu-toggle {
+    background-color: orange;
+    padding: 10px;
+    cursor: grabbing;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-size: 30px;
+    border-radius: 8px;
+    z-index: 900;
+
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f59416;
+    transition: left 0.3s ease;
+}
+.menu.active{
+    left:0;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+.menu li {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    cursor: cell;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: block;
+  cursor: cell;
+}
+
+.menu li:hover {
+  background-color: #f59416;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.pic-of-me{
+    width: 60vw;
+    height: 300vh;
+    object-fit: cover;
+    float: inherit;
+    border-style: inset;
+    border-color: black;
+}

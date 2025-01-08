@@ -1,0 +1,109 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    
+}
+
+body {
+    font-family: copperplate;
+    background: #f59416;
+    color: black;
+    text-align: center;
+    padding: 0%;
+}
+
+.menu-toggle {
+    background-color: orange;
+    padding: 10px;
+    cursor: grabbing;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-size: 30px;
+    border-radius: 8px;
+    z-index: 900;
+
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f59416;
+    transition: left 0.3s ease-in-out;
+}
+.menu.active{
+    left:0;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+.menu li {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    cursor: cell;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: block;
+  cursor: cell;
+}
+
+.menu li:hover {
+  background-color: #f59416;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    padding: 50px;
+}
+
+.text-section {
+    flex: 1; 
+    padding: 20px;
+    text-align: left; 
+}
+
+.image-section {
+    flex: 1; 
+    padding: 30px;
+    display: inline; 
+    justify-content: flex-end; 
+    align-items: flex-start; 
+    position: relative;
+    padding: 30px;
+}
+
+.image-section img {
+    width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section1, .section2, .section3, .section4{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+.section1 p{
+    font-size: small;
+}
