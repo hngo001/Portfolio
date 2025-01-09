@@ -5,7 +5,7 @@ h1 {
 }
 body {
     font-family: copperplate;
-    background: #f59416;
+    background: #f58f47;
     color: black;
     text-align: left;
     margin: 10px;
@@ -14,38 +14,48 @@ body {
     overflow: hidden;
 }
 button {
-    background-color: orange;
+    background-color: #f78431;
     color: black;
-    border-style:double;
-    border-color: #f59416;
+    border-color: #fa7719;
+    border-style: ridge;
     width: 120px;
     height: 30px;
-    padding: 0 ;
     cursor: cell;
-    border-radius: 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: copperplate;
+   
 }
 
 .menu-toggle {
-    background-color: orange;
+    background-color: #f78431;
     padding: 10px;
+    height: 15px;
+    width: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: grabbing;
     position: fixed;
     top: 10px;
     left: 10px;
     color: black;
     font-size: 30px;
-    border-radius: 8px;
+    border-radius: 6px;
+    border-style: ridge;
+    border-color: #fa7719;
     z-index: 900;
+    
 
 }
 .menu {
     position: fixed;
     top: 0;
     left: -250px;
-    width: 250px;
+    width: 230px;
     height: 100%;
-    background-color: #f59416;
-    transition: left 0.3s ease;
+    background-color: #f58f47;
+    transition: left 0.3s ease-in-out;
 }
 .menu.active{
     left:0;
@@ -70,7 +80,7 @@ button {
 }
 
 .menu li:hover {
-  background-color: #f59416;
+  background-color: #f78431;
 }
 
 .container {
